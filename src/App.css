@@ -530,6 +530,10 @@ color: blue;
   margin-left: 1rem;
 }
 
+.register-login-btn{
+  margin-left: 5rem;
+}
+
 form{
    margin-left: -100px;
 }

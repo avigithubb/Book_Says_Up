@@ -190,7 +190,7 @@ function Register(){
             <div className="register main-content" style={mainContent}>
                 <nav className="register-nav">
                     <button onClick={() => {navigateTo("/")}} style={{ float : "left"}}>Home</button>
-                    <button onClick={() => {navigateTo("/login")}} style={{ marginLeft: "5rem"}}>Login</button>
+                    <button className="register-login-btn" onClick={() => {navigateTo("/login")}} style={{ float: "right"}}>Login</button>
                 </nav>
                 <h2 style={h2}>Create Your Account</h2>
                 <p style={p}>Welcome to Book Says<br />Plz enter your Details</p>
