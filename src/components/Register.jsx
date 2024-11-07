@@ -44,7 +44,7 @@ function Register(){
                 about: sendValue.about
             });
 
-            fetch(`http://localhost:3000/register?${queryParams}`, requestOptions)
+            fetch(`https://book-says-back.onrender.com/register?${queryParams}`, requestOptions)
             .then(response => response.json())
             .then(data => { 
                 setIsResponseSubmit(false);

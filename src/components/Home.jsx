@@ -28,7 +28,7 @@ function Home(){
             // body: JSON.stringify({ title: 'React Hooks POST Request Example' })
         };
 
-        fetch(`http://localhost:3000/`, requestOptions)
+        fetch(`https://book-says-back.onrender.com/`, requestOptions)
         .then(response => response.json())
         .then(data => setUsers(data))
     }, []);
@@ -69,7 +69,7 @@ function Home(){
                 
             }).toString();
 
-            fetch(`http://localhost:3000/search_user?${queryParams}`, requestOptions)
+            fetch(`https://book-says-back.onrender.com/search_user?${queryParams}`, requestOptions)
             .then(response => response.json())
             .then(data => {
                 if(data.msg == "failure"){

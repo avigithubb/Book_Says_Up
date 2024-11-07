@@ -26,7 +26,7 @@ function ReadBook(props){
                 
             });
     
-            fetch(`http://localhost:3000/delete?${queryParams}`, requestOptions)
+            fetch(`https://book-says-back.onrender.com/delete?${queryParams}`, requestOptions)
             .then(response => response.json())
             .then(data => {
                 

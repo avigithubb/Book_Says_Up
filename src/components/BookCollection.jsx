@@ -32,7 +32,7 @@ function BookCollection(){
             // body: JSON.stringify({ title: 'React Hooks POST Request Example' })
             };
 
-            fetch(`http://localhost:3000/logout`, requestOptions)
+            fetch(`https://book-says-back.onrender.com/logout`, requestOptions)
             .then(response => response.json())
             .then(data => {
                 setLogOut(false);
@@ -60,7 +60,7 @@ function BookCollection(){
             
         });
 
-        fetch(`http://localhost:3000/get-user?${queryParams}`, requestOptions)
+        fetch(`https://book-says-back.onrender.com/get-user?${queryParams}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             
@@ -82,7 +82,7 @@ function BookCollection(){
             
         });
 
-        fetch(`http://localhost:3000/get-user-books?${queryParams}`, requestOptions)
+        fetch(`https://book-says-back.onrender.com/get-user-books?${queryParams}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             setUserResponse(data);

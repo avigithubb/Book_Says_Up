@@ -28,7 +28,7 @@ function BookRead(){
                 // body: JSON.stringify({ title: 'React Hooks POST Request Example' })
             };
 
-            fetch(`http://localhost:3000/logout`, requestOptions)
+            fetch(`https://book-says-back.onrender.com/logout`, requestOptions)
             .then(response => response.json())
             .then(data => {
                 setLogOut(false);
@@ -61,7 +61,7 @@ function BookRead(){
                 
             });
     
-            fetch(`http://localhost:3000/delete?${queryParams}`, requestOptions)
+            fetch(`https://book-says-back.onrender.com/delete?${queryParams}`, requestOptions)
             .then(response => response.json())
             .then(data => {
                 
@@ -105,7 +105,7 @@ function BookRead(){
             
         });
 
-        fetch(`http://localhost:3000/get_book?${queryParams}`, requestOptions)
+        fetch(`https://book-says-back.onrender.com/get_book?${queryParams}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             console.log(data);;

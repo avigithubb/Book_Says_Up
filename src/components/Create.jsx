@@ -183,7 +183,7 @@ function Create(){
                 
             });
     
-            fetch(`http://localhost:3000/create?${queryParams}`, requestOptions)
+            fetch(`https://book-says-back.onrender.com/create?${queryParams}`, requestOptions)
             .then(response => response.json())
             .then(data => {
 
@@ -235,7 +235,7 @@ function Create(){
                 
             });
     
-            fetch(`http://localhost:3000/update_book?${queryParams}`, requestOptions)
+            fetch(`https://book-says-back.onrender.com/update_book?${queryParams}`, requestOptions)
             .then(response => response.json())
             .then(data => {
                                 
@@ -270,7 +270,7 @@ function Create(){
                 
             });
     
-            fetch(`http://localhost:3000/get_book?${queryParams}`, requestOptions)
+            fetch(`https://book-says-back.onrender.com/get_book?${queryParams}`, requestOptions)
             .then(response => response.json())
             .then(data => {
                 
