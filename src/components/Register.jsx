@@ -44,6 +44,9 @@ function Register(){
                 about: sendValue.about
             });
 
+            console.log(sendValue.name);
+            console.log(sendValue.email);
+
             fetch(`https://book-says-back.onrender.com/register?${queryParams}`, requestOptions)
             .then(response => response.json())
             .then(data => { 
