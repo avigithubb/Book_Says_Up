@@ -150,7 +150,7 @@ function Home(){
                         </ul>
                         )}
                     <form onSubmit={handleSearch} method="post" className="home-form" style={homeForm}>
-                        <input type="search" onChange={handleChange} name="search_me" id="search_user" value={searchUser.search_me} style={{paddingTop: "1rem", border: "none", borderBottom: "1px solid rgba(56, 53, 53, 0.075)", textAlign: "center", marginLeft: "100px", background: "url('/images/search-icon.svg') no-repeat left center"
+                        <input type="search" onChange={handleChange} name="search_me" id="search_user" value={searchUser.search_me} style={{paddingTop: "1rem", border: "none", borderBottom: "1px solid rgba(56, 53, 53, 0.075)", textAlign: "center", marginLeft: "100px"
                         }} placeholder="Search User" />
                         <input style={{backgroundColor: "blue", width: "5rem", height: "2.5rem"}} type="submit" />
                     </form>
